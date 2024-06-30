@@ -23,6 +23,8 @@ opcodes = {
     'CALL': 0x12,
     'RET': 0x13,
     'POKEA': 0x14,
+    'SHL': 0x15,
+    'SHR': 0x16,
     'HALT': 0xFF,
 }
 

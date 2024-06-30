@@ -120,6 +120,12 @@ namespace Solis
                         address = memory[programCounter++];
                         memory[address] = Accumulator;
                         break;
+                    case 0x15: // SHL (Shift Left)
+                        Accumulator <<= memory[programCounter++];
+                        break;
+                    case 0x16: // SHR (Shift Right)
+                        Accumulator >>= memory[programCounter++];
+                        break;
                     case 0xFF: // HALT
                         running = false;
                         break;

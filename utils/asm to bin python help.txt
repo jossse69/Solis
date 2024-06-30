@@ -23,4 +23,6 @@ ASM SOL-8 instruction set:
 19. CALL: call a subroutine, and adds the return address to the stack
 20. RET: return from a subroutine, and pops the return address from the stack
 21. POKEA: stores the accumulator in a memory address
-22. HALT: stops the program
+22. SHL: shifts the accumulator left
+23. SHR: shifts the accumulator right
+24. HALT: stops the program
