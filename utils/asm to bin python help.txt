@@ -1,0 +1,26 @@
+asm_to_bin.py converts assembly code to binary code, following the ASM SOL-8 instruction set.
+run with python asm_to_bin.py, then it will ask you for a file to convert (a .asm file), and the output will be written to a file .bin.
+
+ASM SOL-8 instruction set:
+1. NOP: no operation
+2. LOAD: load accumulator (loads a immediate value into the accumulator)
+3. ADD: add accumulator (adds a value in the accumulator to the accumulator)
+4. SUB: subtract accumulator (subtracts a value in the accumulator from the accumulator)
+5. MUL: multiply accumulator (multiplies a value in the accumulator by the accumulator)
+6. DIV: divide accumulator (divides a value in the accumulator by the accumulator)
+7. JMP: jump to an address
+8. JMPZ: jump to an address if the accumulator is zero
+9. JMPNZ: jump to an address if the accumulator is not zero
+10. AND: does the bitwise and of the accumulator and a immediate value, and stores the result in the accumulator
+11. OR: does the bitwise or of the accumulator and a immediate value, and stores the result in the accumulator
+12. XOR: does the bitwise xor of the accumulator and a immediate value, and stores the result in the accumulator
+13. POKE: stores a immediate value in a memory address
+14. READ: reads a value from a memory address and stores it in the accumulator
+15. INC: increments the accumulator by 1
+16. DEC: decrements the accumulator by 1
+17: CMP: compares the accumulator to an immediate value and if the accumulator is equal to the immediate value, sets the compare flag to true, otherwise sets it to false
+18. JMPF: jump to an address if the compare flag is true
+19. CALL: call a subroutine, and adds the return address to the stack
+20. RET: return from a subroutine, and pops the return address from the stack
+21. POKEA: stores the accumulator in a memory address
+22. HALT: stops the program
