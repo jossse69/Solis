@@ -43,23 +43,23 @@ To contribute code to the Solis Project, follow these steps:
 1. **Fork the repository**: Click the "Fork" button at the top of the repository page to create a copy of the repository on your GitHub account.
 
 2. **Clone your fork**:
-   ```bash
-   git clone https://github.com/jossse69/Solis.git
-   cd Solis
+```bash
+git clone https://github.com/jossse69/Solis.git
+cd Solis
 ```
    
 4. **Create a new branch**:
-   ```bash
-   git checkout -b my-feature-branch
+```bash
+git checkout -b my-feature-branch
 ```
 
 4. **Make your changes**:
   Implement your changes in your new branch. Follow the Style Guide to ensure consistency.
 
 6. **Commit your changes**:
-  ```bash
-  git add .
-  git commit -m "Description of your changes"
+```bash
+git add .
+git commit -m "Description of your changes"
 ```
 
 7. **Push your changes**:
