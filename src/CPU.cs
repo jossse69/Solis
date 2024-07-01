@@ -25,8 +25,13 @@ namespace Solis
 
         public void Run()
         {
+            Program.Window.Closed += (sender, e) => running = false;
+            
             while (running)
             {
+                Program.Window.DispatchEvents();
+                // Hadnle window close event
+                
                 Console.WriteLine($"PC: {programCounter}, Accumulator: {Accumulator}");
                 byte instruction = memory[programCounter++];
                 switch (instruction)
@@ -134,6 +139,8 @@ namespace Solis
                         running = false;
                         break;
                 }
+
+                Program.Window.Display();
             }
         }
 
